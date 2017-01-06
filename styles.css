@@ -1,0 +1,22 @@
+body{
+  height: 1500px;
+}
+
+.sidebar{
+  border-style: solid;
+  border-color: red;
+}
+
+.sidebar ul{
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li{
+  list-style: none;
+  width: 15em;
+  height: 5em;
+  padding: 10px 20px;
+  border-style: solid;
+  border-color: red;
+}
