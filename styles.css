@@ -3,8 +3,7 @@ body{
 }
 
 .sidebar{
-  border-style: solid;
-  border-color: red;
+  position: relative;
 }
 
 .sidebar ul{
@@ -13,10 +12,25 @@ body{
 }
 
 .sidebar li{
+  margin-bottom: 1vh;
   list-style: none;
-  width: 15em;
-  height: 5em;
-  padding: 10px 20px;
+  width: 30vw;
+  height: 9vh;
+  padding: 10px 10px;
   border-style: solid;
   border-color: red;
+  position: relative;
+
+  -webkit-transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -o-transition: all 0.75s ease;
+  -ms-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+
+  left: 0;
+}
+
+.sidebar li:hover{
+  left: 5vw;
+  background-color: black;
 }
