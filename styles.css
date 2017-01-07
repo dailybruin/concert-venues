@@ -1,8 +1,8 @@
 body{
-  height: 1500px;
 }
 
 .sidebar{
+  margin-top: 1vh;
   position: relative;
 }
 
@@ -15,8 +15,7 @@ body{
   margin-bottom: 1vh;
   list-style: none;
   width: 30vw;
-  height: 9vh;
-  padding: 10px 10px;
+  height: 10vh;
   border-style: solid;
   border-color: red;
   position: relative;
@@ -33,4 +32,9 @@ body{
 .sidebar li:hover{
   left: 5vw;
   background-color: black;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
 }
