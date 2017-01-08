@@ -27,4 +27,11 @@ $(document).ready(function(){
 				}
 	});
 
+  Handlebars.registerHelper('times', function(n, block) {
+    var accum = '';
+    for(var i = 0; i < n; ++i)
+        accum += block.fn('<img src="http://dailybruin.com/images/paws/full.png" />');
+    return accum;
+  });
+
 });
