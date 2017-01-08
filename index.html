@@ -36,10 +36,10 @@
     <!-- Handlebars CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js" type="text/javascript"></script>
 
-    <!-- Own javascript -->
+    <!-- Own JavaScript -->
     <script src="main.js" type="text/javascript"></script>
 
-    <!-- list items -->
+    <!-- Reviews here -->
     <script id="list-template" type="text/x-handlebars-template">
     {{#each .}}
       <li id="list{{@index}}" class="no-gutter">
@@ -48,7 +48,9 @@
             {{this.gsx$venuename.$t}}
           </div>
           <div class="col-xs-12">
-            {{this.gsx$rating.$t}}
+            {{#times this.gsx$rating.$t }}
+            {{{this}}}
+            {{/times}}
           </div>
         </div>
         <div class="col-xs-9">
@@ -67,5 +69,6 @@
       </div>
     {{/each}}
     </script>
-  </body>
+
+    </body>
 </html>
