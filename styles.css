@@ -1,3 +1,7 @@
+/** Sidebar styling
+********************************
+**/
+
 .sidebar{
   margin-top: 1vh;
   position: relative;
@@ -33,4 +37,21 @@
 .no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;
+}
+
+/** blurb styling
+********************************
+**/
+
+.blurb-placeholder{
+  margin-top: 1vh;
+}
+
+/** mobile
+********************************
+**/
+
+@media only screen and (max-device-width: 480px) {
+
+
 }
