@@ -8,18 +8,22 @@ $(document).ready(function(){
 						data = data.feed.entry;
 
 						// Grab the template script
-						var theTemplateScript = $("#list-template").html();
+						var listTemplateScript = $("#list-template").html();
+            var blurbTemplateScript = $("#blurb-template").html();
 
 						// Compile the template
-						var theTemplate = Handlebars.compile(theTemplateScript);
+						var listTemplate = Handlebars.compile(listTemplateScript);
+            var blurbTemplate = Handlebars.compile(blurbTemplateScript);
 
 						var mydata = data;
 
 						// Pass our data to the template
-						var theCompiledHtml = theTemplate(mydata);
+						var listCompiledHtml = listTemplate(mydata);
+            var blurbCompiledHtml = blurbTemplate(mydata);
 
 						// Add the compiled html to the page
-						$('.list-placeholder').html(theCompiledHtml);
+						$('.list-placeholder').html(listCompiledHtml);
+            $('.blurb-placeholder').html(blurbCompiledHtml);
 				}
 	});
 

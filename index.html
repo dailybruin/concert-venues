@@ -22,6 +22,8 @@
           </div>
         </div>
         <div class="col-xs-7">
+          <div class="blurb-placeholder">
+          </div>
         </div>
       </div>
     </div>
@@ -37,10 +39,14 @@
     <!-- Own JavaScript -->
     <script src="main.js" type="text/javascript"></script>
 
+<<<<<<< HEAD
     <!-- Reviews here -->
+=======
+    <!-- list items -->
+>>>>>>> 52de87581e20080b61bdfbb178eb4b0ce1090f53
     <script id="list-template" type="text/x-handlebars-template">
     {{#each .}}
-      <li class="no-gutter">
+      <li id="list{{@index}}"class="no-gutter">
         <div class="col-xs-3 no-gutter">
           <div class="col-xs-12">
             {{this.gsx$venuename.$t}}
@@ -56,5 +62,12 @@
     {{/each}}
     </script>
 
+    <script id="blurb-template" type="text/x-handlebars-template">
+    {{#each .}}
+      <div id="blurb{{@index}}">
+        {{this.gsx$blurb.$t}}
+      </div>
+    {{/each}}
+    </script>
   </body>
 </html>
