@@ -30,8 +30,8 @@
 }
 
 .sidebar li:hover{
-  left: 5vw;
-  background-color: black;
+  left: 3.5vw;
+  background-color: lightgray;
 }
 
 .no-gutter > [class*='col-'] {
@@ -47,11 +47,23 @@
   margin-top: 1vh;
 }
 
+.footer{
+  position: fixed;
+  bottom: 10px;
+}
+
 /** mobile
 ********************************
 **/
 
 @media only screen and (max-device-width: 480px) {
 
+  .sidebar li {
+    width: 90vw;
+  }
 
+
+  .footer{
+    position: relative;
+  }
 }
