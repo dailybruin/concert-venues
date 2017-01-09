@@ -41,6 +41,8 @@ $(document).ready(function(){
     var accum = '';
     for(var i = 0; i < n; ++i)
         accum += block.fn('<img src="http://dailybruin.com/images/paws/full.png" style="height: 10px; width:10px;" />');
+    for(i = 0; i < 5 - n; i ++)
+        accum += block.fn('<img src="http://dailybruin.com/images/paws/blank.png" style="height: 10px; width:10px;" />');
     return accum;
   });
 
