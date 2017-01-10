@@ -18,7 +18,7 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-4 col-xs-12">
+        <div class="col-sm-4 hidden-xs">
           <div class="sidebar">
             <ul class="list-placeholder">
             </ul>
@@ -99,6 +99,13 @@
         <p class="blurb-text">{{{this.gsx$blurb.$t}}}</p>
       </div>
     {{/each}}
+    </script>
+
+    <script id="photo-template" type="text/x-handlebars-template">
+      {{#each .}}
+        <img id="photo{{@index}}" class="main-photo" src="{{this.gsx$photo.$t}}" />
+        {{this.gsx$venuename.$t}}
+      {{/each}}
     </script>
 
     </body>

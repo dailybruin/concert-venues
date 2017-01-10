@@ -8,20 +8,24 @@ $(document).ready(function(){
 						// Grab the template script
 						var listTemplateScript = $("#list-template").html();
             var blurbTemplateScript = $("#blurb-template").html();
+            var photoTemplateScript = $("#photo-template").html();
 
 						// Compile the template
 						var listTemplate = Handlebars.compile(listTemplateScript);
             var blurbTemplate = Handlebars.compile(blurbTemplateScript);
+            var photoTemplate = Handlebars.compile(photoTemplateScript);
 
 						var mydata = data;
 
 						// Pass our data to the template
 						var listCompiledHtml = listTemplate(mydata);
             var blurbCompiledHtml = blurbTemplate(mydata);
+            var photoCompiledHtml = photoTemplate(mydata);
 
 						// Add the compiled html to the page
 						$('.list-placeholder').html(listCompiledHtml);
             $('.blurb-placeholder').html(blurbCompiledHtml);
+            $('.photo-placeholder').html(photoCompiledHtml);
 
             afterAJAX();
 				}
@@ -37,10 +41,18 @@ $(document).ready(function(){
         $("#blurb" + id).show();
     });
 
+    $(".main-photo").on("click", function(){
+        $(".main-intro-page").hide();
+        $(".blurb").hide();
+        var id = $(this).attr("id").slice(-1);
+        $("#blurb" + id).show();
+    });
+
     $(".back-button").on("click", function(){
       $(".blurb").hide();
       $(".main-intro-page").show();
     });
+
   }
 
   Handlebars.registerHelper('times', function(n, block) {
