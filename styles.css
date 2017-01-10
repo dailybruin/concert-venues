@@ -47,6 +47,10 @@ Main description styling
   color: white;
 }
 
+.sidebar-photo{
+  width: 80%;
+}
+
 .no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;
@@ -74,7 +78,8 @@ Main description styling
   margin-top: 1vh;
 }
 
-.footer{
+.credits{
+  float: right;
   color: gray;
   font-size: 9px;
   bottom: 10px;
@@ -93,9 +98,6 @@ Main description styling
   font-size: 15px;
 }
 
-.blurb-text{
-  padding-bottom: 15px;
-}
 
 /** Mobile styling
 ********************************
