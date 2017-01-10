@@ -35,6 +35,10 @@ Main description styling
   box-shadow: 2px 2px 5px #999;
 }
 
+.footer {
+  font-size: 10px;
+}
+
 /** Sidebar styling
 ********************************
 **/
