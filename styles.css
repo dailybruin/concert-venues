@@ -44,13 +44,9 @@
     padding-left:0;
 }
 
-/** blurb styling
+/** intrdouction styling
 ********************************
 **/
-
-.blurb-placeholder{
-  margin-top: 1vh;
-}
 
 .credits{
   float: right;
@@ -72,6 +68,25 @@
   font-size: 15px;
 }
 
+.main-photo{
+  max-width: 20%;
+  display: inline;
+}
+
+.main-photo:hover{
+  border: solid 1px #CCC;
+  -moz-box-shadow: 2px 2px 5px #999;
+  -webkit-box-shadow: 2px 2px 5px #999;
+  box-shadow: 2px 2px 5px #999;
+}
+
+/** blurb styling
+********************************
+**/
+
+.blurb-placeholder{
+  margin-top: 1vh;
+}
 
 /** Mobile styling
 ********************************

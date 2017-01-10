@@ -15,7 +15,7 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-4 col-xs-12">
+        <div class="col-sm-4 hidden-xs">
           <div class="sidebar">
             <ul class="list-placeholder">
             </ul>
@@ -24,7 +24,7 @@
         <div class="col-sm-8 col-xs-12">
           <div class="col-xs-12">
             <div class="credits">
-              Page created and designed by <a href="">Paulina Lei</a> and <a href="">Howard Huang</a>. Find more stories at <a href="">Daily Bruin</a>.
+              Page created and designed by <a href="https://github.com/paulinalei" target="_blank">Paulina Lei</a> and <a href="https://github.com/H-Huang" target="_blank">Howard Huang</a>. Find more stories at <a href="http://www.dailybruin.com" target="_blank">dailybruin.com</a>.
             </div>
           </div>
           <div class="col-xs-12 main-intro-page">
@@ -88,6 +88,13 @@
         <p class="blurb-text">{{{this.gsx$blurb.$t}}}</p>
       </div>
     {{/each}}
+    </script>
+
+    <script id="photo-template" type="text/x-handlebars-template">
+      {{#each .}}
+        <img id="photo{{@index}}" class="main-photo" src="{{this.gsx$photo.$t}}" />
+        {{this.gsx$venuename.$t}}
+      {{/each}}
     </script>
 
     </body>
