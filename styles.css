@@ -43,8 +43,8 @@ body {
   color: white;
 
   background: #200122; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #352c2c , #dd3737); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #352c2c, #dd3737); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to left, #352c2c , #c22015); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #352c2c, #c22015); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -82,7 +82,7 @@ body {
 
 .sidebar li:hover{
   left: 3vw;
-  background-color: black;
+  background-color: #352c2c;
   color: white;
 }
 
@@ -117,6 +117,16 @@ body {
   margin-top: 1vh;
 }
 
+.blurb-photo{
+  float: right;
+  margin: 15px;
+  width: 50%;
+}
+
+.blurb-text{
+  margin-top: 15px;
+  font-size: 15.5px;
+}
 
 
 /** blurb styling
