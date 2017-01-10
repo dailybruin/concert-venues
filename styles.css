@@ -35,6 +35,10 @@
   color: white;
 }
 
+.sidebar-photo{
+  width: 80%;
+}
+
 .no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;
@@ -48,7 +52,8 @@
   margin-top: 1vh;
 }
 
-.footer{
+.credits{
+  float: right;
   color: gray;
   font-size: 9px;
   bottom: 10px;
@@ -67,9 +72,6 @@
   font-size: 15px;
 }
 
-.blurb-text{
-  padding-bottom: 15px;
-}
 
 /** Mobile styling
 ********************************
