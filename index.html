@@ -9,6 +9,9 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
   </head>
@@ -33,7 +36,7 @@
           </div>
           <div class="col-xs-12">
             <div class="footer">
-              Page created and design by <a href="">Paulina Lei</a> and <a href="">Howard Huang</a>.
+              Page created and designed by <a href="https://github.com/h-huang">Howard Huang</a> and <a href="https://github.com/paulinalei">Paulina Lei</a>.
             </div>
           </div>
         </div>
@@ -60,9 +63,11 @@
             {{this.gsx$venuename.$t}}
           </div>
           <div class="col-xs-12">
-            {{#times this.gsx$rating.$t }}
-              {{{this}}}
-            {{/times}}
+            <div class="list-rating" >
+              {{#times this.gsx$rating.$t }}
+                {{{this}}}
+              {{/times}}
+            </div>
           </div>
         </div>
         <div class="col-xs-4 col-xs-offset-5">
@@ -76,7 +81,11 @@
     {{#each .}}
       <div id="blurb{{@index}}" class="blurb">
         <h1>{{this.gsx$venuename.$t}}</h1>
-        <h2>{{this.gsx$rating.$t}}</h2>
+        <div class="blurb-rating">
+          {{#times this.gsx$rating.$t }}
+            {{{this}}}
+          {{/times}}
+        </div>
         <p class="blurb-text">{{{this.gsx$blurb.$t}}}</p>
       </div>
     {{/each}}
