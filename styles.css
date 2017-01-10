@@ -52,7 +52,7 @@ body {
 ********************************
 **/
 .sidebar{
-  margin-top: 1vh;
+  margin-top: 2.75vh;
   position: relative;
 }
 
@@ -64,9 +64,9 @@ body {
 .sidebar li{
   margin-bottom: 1vh;
   list-style: none;
-  width: 30vw;
+  width: 25vw;
   height: 13vh;
-  box-shadow: 4px 4px 2px #000000;
+  box-shadow: 0.75px 0.75px 0.75px #000000;
 
   -webkit-transition: all 0.75s ease;
   -moz-transition: all 0.75s ease;
@@ -81,7 +81,7 @@ body {
 }
 
 .sidebar li:hover{
-  left: 3vw;
+  left: 5vw;
   background-color: #352c2c;
   color: white;
 }
@@ -98,6 +98,15 @@ body {
 .list-rating img {
   height: 10px;
   width: 10px;
+}
+
+.venue-name{
+  font-size: 16px;
+}
+
+.note{
+  margin-top: 0.5vh;
+  font-size: 10px;
 }
 
 /** blurb styling
