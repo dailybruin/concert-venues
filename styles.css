@@ -16,7 +16,7 @@
   margin-bottom: 1vh;
   list-style: none;
   width: 30vw;
-  height: 10vh;
+  height: 13vh;
   box-shadow: 4px 4px 2px #888888;
 
   -webkit-transition: all 0.75s ease;
@@ -30,7 +30,7 @@
 }
 
 .sidebar li:hover{
-  left: 3.5vw;
+  left: 3vw;
   background-color: black;
   color: white;
 }
@@ -51,13 +51,12 @@
 .footer{
   color: gray;
   font-size: 9px;
-  position: fixed;
   bottom: 10px;
 }
 
 .main-title{
-  color: red;
-  margin-bottom: 15px;
+  width: 100%;
+  margin: 10px 0px;
 }
 
 .main-byline{
@@ -66,6 +65,10 @@
 
 .main-description{
   font-size: 15px;
+}
+
+.blurb-text{
+  padding-bottom: 15px;
 }
 
 /** Mobile styling
