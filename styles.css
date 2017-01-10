@@ -24,7 +24,7 @@ Main description styling
 }
 
 .main-photo{
-  max-width: 20%;
+  width: 100%;
   display: inline;
 }
 
