@@ -1,3 +1,7 @@
+/** Sidebar styling
+********************************
+**/
+
 .sidebar{
   margin-top: 1vh;
   position: relative;
@@ -12,7 +16,7 @@
   margin-bottom: 1vh;
   list-style: none;
   width: 30vw;
-  height: 10vh;
+  height: 13vh;
   box-shadow: 4px 4px 2px #888888;
 
   -webkit-transition: all 0.75s ease;
@@ -26,11 +30,59 @@
 }
 
 .sidebar li:hover{
-  left: 5vw;
+  left: 3vw;
   background-color: black;
+  color: white;
 }
 
 .no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;
+}
+
+/** blurb styling
+********************************
+**/
+
+.blurb-placeholder{
+  margin-top: 1vh;
+}
+
+.footer{
+  color: gray;
+  font-size: 9px;
+  bottom: 10px;
+}
+
+.main-title{
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.main-byline{
+  font-size: 18px;
+}
+
+.main-description{
+  font-size: 15px;
+}
+
+.blurb-text{
+  padding-bottom: 15px;
+}
+
+/** Mobile styling
+********************************
+**/
+
+@media only screen and (max-device-width: 640px) {
+
+  .sidebar li {
+    width: 90vw;
+  }
+
+
+  .footer{
+    position: relative;
+  }
 }
