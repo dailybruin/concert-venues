@@ -9,6 +9,10 @@ Main description styling
   font-family: 'Raleway', sans-serif;
 }
 
+.footer {
+  font-size: 10px;
+}
+
 /** Sidebar styling
 ********************************
 **/
