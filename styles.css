@@ -13,6 +13,15 @@ Main description styling
   font-size: 10px;
 }
 
+body {
+  color: white;
+
+  background: #200122; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #000000 , #b71010); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #000000 , #b71010); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
 /** Sidebar styling
 ********************************
 **/
@@ -31,7 +40,7 @@ Main description styling
   list-style: none;
   width: 30vw;
   height: 13vh;
-  box-shadow: 4px 4px 2px #888888;
+  box-shadow: 4px 4px 2px #000000;
 
   -webkit-transition: all 0.75s ease;
   -moz-transition: all 0.75s ease;
