@@ -31,9 +31,15 @@ $(document).ready(function(){
     $(".blurb").hide();
 
     $(".sidebar ul li").on("click", function(){
+        $(".main-intro-page").hide();
         $(".blurb").hide();
         var id = $(this).attr("id").slice(-1);
         $("#blurb" + id).show();
+    });
+
+    $(".back-button").on("click", function(){
+      $(".blurb").hide();
+      $(".main-intro-page").show();
     });
   }
 
