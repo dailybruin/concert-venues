@@ -39,10 +39,24 @@ $(document).ready(function(){
 
   Handlebars.registerHelper('times', function(n, block) {
     var accum = '';
-    for(var i = 0; i < n; ++i)
-        accum += block.fn('<img src="http://dailybruin.com/images/paws/full.png" style="height: 10px; width:10px;" />');
-    for(i = 0; i < 5 - n; i ++)
-        accum += block.fn('<img src="http://dailybruin.com/images/paws/blank.png" style="height: 10px; width:10px;" />');
+    if (n == 0.5 || n == 1.5 || n == 2.5 || n == 3.5 || n == 4.5) {
+      for(var i = 0; i < n - 1; ++i) {
+          accum += block.fn('<img src="http://dailybruin.com/images/paws/full.png" style="height: 10px; width:10px;" />');
+      }
+      accum += block.fn('<img src="http://dailybruin.com/images/paws/half.png" style="height: 10px; width:10px;" />');
+    } else {
+      for(var i = 0; i < n; ++i) {
+          accum += block.fn('<img src="http://dailybruin.com/images/paws/full.png" style="height: 10px; width:10px;" />');
+      }
+    }
+
+    if (n == 0.5 || n == 1.5 || n == 2.5 || n == 3.5 || n == 4.5) {
+      for(i = 0; i < 5 - n - 1; i ++)
+          accum += block.fn('<img src="http://dailybruin.com/images/paws/blank.png" style="height: 10px; width:10px;" />');
+    } else {
+      for(i = 0; i < 5 - n; i ++)
+          accum += block.fn('<img src="http://dailybruin.com/images/paws/blank.png" style="height: 10px; width:10px;" />');
+    }
     return accum;
   });
 
