@@ -64,7 +64,7 @@ body {
 .sidebar li{
   margin-bottom: 1vh;
   list-style: none;
-  width: 25vw;
+  width: 28vw;
   height: 13vh;
   box-shadow: 0.75px 0.75px 0.75px #000000;
 
@@ -81,7 +81,7 @@ body {
 }
 
 .sidebar li:hover{
-  left: 5vw;
+  left: 3vw;
   background-color: #352c2c;
   color: white;
 }
@@ -105,6 +105,7 @@ body {
 }
 
 .note{
+  margin-left: -15px;
   margin-top: 0.5vh;
   font-size: 10px;
 }
@@ -144,6 +145,14 @@ body {
 
 .blurb-placeholder{
   margin-top: 1vh;
+}
+
+.back-button{
+  color: lightblue;
+}
+
+.back-button:hover{
+  color: black;
 }
 
 /** Mobile styling
